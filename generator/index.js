@@ -3,14 +3,14 @@ module.exports = (api, opts, rootOptions) => {
 
   api.extendPackage({
     dependencies: {
-      'element-ui': '^2.4.5'
+      'element-up': '^0.2.0'
     }
   })
 
-  api.injectImports(utils.getMain(), `import './plugins/element.js'`)
+  api.injectImports(utils.getMain(), `import './plugins/element-up.js'`)
 
   api.render({
-    './src/plugins/element.js': './templates/src/plugins/element.js',
+    './src/plugins/element-up.js': './templates/src/plugins/element-up.js',
     './src/App.vue': './templates/src/App.vue'
   })
 
@@ -22,7 +22,7 @@ module.exports = (api, opts, rootOptions) => {
     })
   } else if (opts.customTheme) {
     api.render({
-      './src/element-variables.scss': './templates/src/element-variables.scss'
+      './src/element-up-variables.scss': './templates/src/element-up-variables.scss'
     })
     api.extendPackage({
       devDependencies: {
@@ -36,7 +36,7 @@ module.exports = (api, opts, rootOptions) => {
     if (opts.import === 'partial') {
       utils.updateBabelConfig(cfg => {
         const pluginComponent = ['component', {
-          'libraryName': 'element-ui',
+          'libraryName': 'element-up',
           'styleLibraryName': 'theme-chalk'
         }]
         cfg.plugins = cfg.plugins || []

@@ -4,7 +4,7 @@ module.exports = [
   {
     type: 'list',
     name: 'import',
-    message: 'How do you want to import Element?',
+    message: 'How do you want to import ElementUp?',
     choices: [
       { name: 'Fully import', value: 'full' },
       { name: 'Import on demand', value: 'partial' }
@@ -15,7 +15,7 @@ module.exports = [
     when: answers => answers.import === 'full',
     type: 'confirm',
     name: 'customTheme',
-    message: 'Do you wish to overwrite Element\'s SCSS variables?',
+    message: 'Do you wish to overwrite ElementUp\'s SCSS variables?',
     default: false,
   },
   {
