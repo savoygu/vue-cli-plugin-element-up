@@ -26,6 +26,7 @@ module.exports = (api, opts, rootOptions) => {
     })
     api.extendPackage({
       devDependencies: {
+        "sass-bem": "^2.6.5",
         'sass-loader': '^7.0.3',
         'node-sass': '^4.9.2'
       }
