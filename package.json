@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-element-up",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "vue-cli 3 plugin to add element-up",
   "main": "index.js",
   "repository": {
