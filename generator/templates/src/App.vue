@@ -9,7 +9,7 @@
         ></code>
         below
       </p>
-      <up-radio :data="data"></up-radio>
+      <up-radio-group v-model="fruit" :data="data"></up-radio-group>
     </div>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -25,10 +25,11 @@ export default {
   },
   data () {
     return {
+      fruit: '',
       data: [
-        { key: '🍌', value: 1, size: 'medium' },
-        { key: '🍎', value: 2, size: 'small' },
-        { key: '🍊', value: 3, size: 'mini' }
+        { name: '🍌', value: 1, size: 'medium' },
+        { name: '🍎', value: 2, size: 'small' },
+        { name: '🍊', value: 3, size: 'mini' }
       ]
     }
   }

@@ -3,7 +3,8 @@ module.exports = (api, opts, rootOptions) => {
 
   api.extendPackage({
     dependencies: {
-      'element-up': '^0.2.0'
+      'element-up': '^0.8.0',
+      'element-ui': '^2.11.0'
     }
   })
 
